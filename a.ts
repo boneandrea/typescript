@@ -1,3 +1,5 @@
+//////////////////////////////////////////////////////
+console.log(`[[[[ type ]]]`);
 let birthday: number|string;
 
 birthday=18;
@@ -24,6 +26,8 @@ const scope=()=>{
     // console.log(store) // Cannot find name 'store'
 }
 
+//////////////////////////////////////////////////////
+console.log(`[[[[ bool ]]]`);
 let my_bool: boolean
 
 my_bool= 1>0;
@@ -61,3 +65,47 @@ my_number=100000000000000000000;
     // my_number=500000000000000000000; // error
     my_number=5000000n;
 }
+
+const a = 0.1;
+const b = 0.2;
+console.log(a + b); // 0.30000000000000004
+console.log(Infinity)
+console.log(NaN)
+
+//////////////////////////////////////////////////////
+console.log(`[[[[ string ]]]`);
+let s:string;
+
+s="0";
+
+// error
+// s="1
+// b";
+
+// error
+// s='2
+// ';
+
+s=`31
+
+32`;
+
+console.log(s)
+
+console.log(parseInt('0100', 10)); // 100になる
+console.log(parseInt('0100', 8)); // 100になる
+
+console.log(Boolean('')); // false
+// all true
+console.log(Boolean('0'));
+console.log(Boolean('1'));
+console.log(Boolean('false'));
+console.log(Boolean('true'));
+
+//
+s="ユニコード"
+console.log(s)
+console.log("ＡＢＣABCアーメンｱｲｳｴｵ㍻".normalize("NFKC"))
+console.log("ＡＢＣABCアーメンｱｲｳｴｵ㍻".split(""))
+console.log("ＡＢＣABCアーメンｱｲｳｴｵ㍻".split("").join())
+console.log("ＡＢＣABCアーメンｱｲｳｴｵ㍻".split("").join(""))
